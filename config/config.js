@@ -3,7 +3,7 @@ var route = require('./route.js');
 
 exports = module.exports = function(app, express) {
 
-    app.set('port', process.env.PORT || 3001);
+    app.set('port', process.env.PORT || 8888);
     app.set('views', __dirname + '/../views');
     app.set('view engine', 'jade');
     app.use(express.favicon());
@@ -11,10 +11,10 @@ exports = module.exports = function(app, express) {
     app.use(express.bodyParser());
     app.use(express.methodOverride());
     app.use(express.cookieParser('your secret here'));
-    /*app.use(express.session({
+    app.use(express.session({
         secret : 'secret'
     }));
-    app.use(app.router);*/
+    app.use(app.router);
     app.use(express.static(path.join(__dirname, '/../public')));
 
     // development only
