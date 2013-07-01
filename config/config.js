@@ -1,4 +1,4 @@
-var path = require('path');
+﻿var path = require('path');
 var route = require('./route.js');
 
 exports = module.exports = function(app, express) {

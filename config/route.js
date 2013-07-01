@@ -1,4 +1,4 @@
-var security = require('./security.js');
+﻿var security = require('./security.js');
 var userController = require('./../controllers/UserController.js');
 
 exports = module.exports = function (app) {

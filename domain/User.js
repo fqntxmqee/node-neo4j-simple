@@ -1,4 +1,4 @@
-
+﻿
 var User = exports.User = module.exports = function User(_node) {
     // neo4j node
     this._node = _node;
