@@ -1,4 +1,4 @@
-﻿## Installation
+## Installation
 
 ```bash
 # Install the required dependencies
