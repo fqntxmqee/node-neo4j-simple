@@ -12,5 +12,6 @@ block content
         input(type='submit', value='Update')
 
     form(action='/users/#{user.id}', method='POST', onsubmit='return confirm("Are you sure?");')
-        p And if you're feeling destructive钬?        input(type='hidden', name='_method', value='DELETE')
+        p p And if you're feeling destructive…
+        input(type='hidden', name='_method', value='DELETE')
         input(type='submit', value='Delete User')
